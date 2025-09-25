@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
-        // Create participants list HTML
+        // Build participants list HTML
         let participantsHTML = "";
-        if (details.participants.length > 0) {
+        if (details.participants && details.participants.length > 0) {
           participantsHTML = `
             <div class="participants-section">
               <strong>Participants:</strong>
